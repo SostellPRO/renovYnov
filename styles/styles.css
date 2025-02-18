@@ -85,7 +85,6 @@ button:hover {
   background-color: var(--colorv1);
 }
 
-header,
 section {
   min-height: 100vh;
   width: 100vw;
@@ -95,23 +94,9 @@ section {
   overflow: hidden; /* Empêche tout débordement */
 }
 
-.header__container,
-.solutions__container,
-.prestation_container,
-.tuto_container,
-.contact__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centrage vertical */
-  align-items: center; /* Centrage horizontal */
-  min-height: 100vh; /* Force le remplissage de l'écran */
-  width: 100vw;
-}
-
 .solutions__partie-basse,
 .prestation__partie-basse,
 .tuto__partie-basse {
-  flex-grow: 1; /* S'assure qu'elles prennent toute la place disponible */
   display: flex;
   align-items: center;
   justify-content: center;

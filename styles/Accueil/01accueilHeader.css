@@ -18,8 +18,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Espace les éléments pour que le bas soit occupé */
-  height: 100vh; /* Ajuste la hauteur */
-  overflow: hidden; /* Empêche les débordements */
 }
 
 .header__partie-haute {
