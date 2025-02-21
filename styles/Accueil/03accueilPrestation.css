@@ -49,8 +49,7 @@
 
 .prestation__partie-basse {
   height: 76%;
-  width: 98%;
-  margin: auto;
+  width: 100%;
   background-image: url("../../Images/Images/discussion.png");
   background-size: cover;
   background-position: center;
@@ -59,7 +58,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 1rem;
 }
 
 .prestation_détail {
