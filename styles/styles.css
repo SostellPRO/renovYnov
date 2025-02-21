@@ -102,39 +102,34 @@ section {
   justify-content: center;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 /*TITRES*/
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-family: "urbanist", sans-serif;
   font-weight: bold;
 }
 
 h1 span {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-family: "urbanist", sans-serif;
   font-weight: bold;
 }
 
 h2 {
-  font-size: 2.5rem;
-  font-family: "urbanist", sans-serif;
-  font-weight: bold;
-}
-
-h3 {
   font-size: 2rem;
   font-family: "urbanist", sans-serif;
   font-weight: bold;
 }
 
+h3 {
+  font-size: 1.75rem;
+  font-family: "urbanist", sans-serif;
+  font-weight: bold;
+}
+
 h4 {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-family: "urbanist", sans-serif;
   font-weight: bold;
 }

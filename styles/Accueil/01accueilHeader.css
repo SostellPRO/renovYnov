@@ -42,7 +42,7 @@
   cursor: pointer;
   padding-bottom: 0.75rem;
   transition: transform 0.3s ease-in-out;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 
 .header__nav-li:hover {
@@ -101,6 +101,7 @@
 }
 
 .header__partie-basse-gauche {
+  margin-top: 2.5rem;
   margin-left: 4rem;
   margin-bottom: 12rem;
   display: flex;
@@ -172,7 +173,7 @@
   position: relative;
   bottom: 0; /* Assure que l’image est bien collée en bas */
   right: 3rem; /* Décale un peu vers la gauche pour éviter le bord droit */
-  width: 62.5%; /* Empêche l’image de dépasser en largeur */
-  height: 62.5%; /* Empêche qu'elle ne dépasse la hauteur du container */
+  width: 70%; /* Empêche l’image de dépasser en largeur */
+  height: 70%; /* Empêche qu'elle ne dépasse la hauteur du container */
   object-fit: contain; /* Garde le bon ratio */
 }
