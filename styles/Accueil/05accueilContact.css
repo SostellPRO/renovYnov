@@ -1,2 +1,105 @@
-.contact__container {
+.footerPage {
+  height: 100vh;
+  width: 100vw;
+}
+
+.formulaire {
+  height: 70%;
+  background-color: var(--colorv9);
+  display: flex;
+}
+
+.formulaire__gauche {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulaire__gauche h3 {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  color: var(--text-color2);
+}
+
+.formulaire__gauche ul li {
+  margin-top: 20%;
+  margin-bottom: 20%;
+  color: var(--text-color2);
+}
+
+.formulaire__droite {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: var(--text-color2);
+}
+
+.champs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 80%;
+  margin: auto;
+  background-color: var(--colorv11);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  color: var(--text-color2);
+}
+
+.champs input,
+.champs button {
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: var(--colorv1);
+  color: var(--text-color2);
+}
+
+button {
+  grid-column: span 2;
+}
+
+.champs input:nth-child(1),
+.champs input:nth-child(2) {
+  grid-column: span 1;
+}
+
+.champs input:nth-child(3) {
+  grid-column: span 2;
+}
+
+.champs input:nth-child(4),
+.champs input:nth-child(5) {
+  grid-column: span 1;
+}
+
+.champs input:nth-child(6) {
+  grid-column: span 2;
+}
+
+.champs input:nth-child(7) {
+  grid-column: span 2;
+}
+
+.champs textarea {
+  grid-column: span 2;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  height: 4rem;
+  background-color: var(--colorv1);
+}
+
+.contact {
+  height: 30%;
+  background: linear-gradient(
+    45deg,
+    var(--colorv4) 0%,
+    var(--colorv4) 20%,
+    var(--colorv5) 60%,
+    var(--colorv6) 100%
+  );
 }
