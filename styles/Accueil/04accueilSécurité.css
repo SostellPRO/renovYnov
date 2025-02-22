@@ -5,33 +5,36 @@
 }
 
 .tuto__partie-haute {
-  height: 20%;
+  height: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-direction: column;
 }
 
 .tuto__partie-haute h2 {
-  display: flex;
-  flex-direction: column;
-  margin-top: 2rem;
-  margin-bottom: 1.25rem;
+  color: var(--colorv3);
 }
 
 .tuto__partie-haute h3 {
-  display: flex;
-  margin-bottom: 3rem;
-  font-size: 1.25rem;
+  margin-top: 1rem;
 }
 
 .tuto__partie-basse {
-  height: 70%;
-  width: 80%;
+  height: 60%;
+  width: 90%;
   margin: auto;
   background-color: var(--colorv7);
 }
 
+.tuto__card-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 90%;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
 .tuto__card-container1 {
   display: flex;
   margin: auto;
@@ -42,25 +45,38 @@
   margin: auto;
   justify-content: space-evenly;
 }
-.tuto__card-container {
-  background-color: rgba(255, 255, 255, 0.9);
-  width: 90%;
-
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  z-index: 2;
-}
-
 .tuto__card {
   position: relative;
-  width: 25%;
+  width: 35%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start; /* aligne le contenu à gauche */
   margin: 1rem;
+  padding: 1rem 1rem 1rem 60px; /* espace à gauche pour l'image */
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ddd; /* délimitation visuelle */
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.tuto__card img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: auto;
+}
+
+.tuto__card h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.tuto__card p {
+  font-size: 0.75rem;
+}
+
+/* La pseudo-élément reste inchangé pour afficher data-number */
 .tuto__card::before {
   content: attr(data-number);
   position: absolute;
