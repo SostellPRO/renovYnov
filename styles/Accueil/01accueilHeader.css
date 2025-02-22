@@ -1,5 +1,6 @@
 .presentation {
   height: 100vh;
+  width: 100vw;
   overflow: hidden;
 }
 
@@ -14,10 +15,10 @@
   border-radius: 1rem;
   width: 100%;
   height: 100%;
-  position: relative; /* Permet le positionnement absolu des éléments internes */
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Espace les éléments pour que le bas soit occupé */
+  justify-content: space-between;
 }
 
 .header__partie-haute {
