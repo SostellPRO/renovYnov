@@ -103,3 +103,23 @@ button {
     var(--colorv6) 100%
   );
 }
+
+.choixContact {
+  display: flex;
+  flex-direction: column;
+}
+
+.choixContact1,
+.choixContact2,
+.choixContact3 {
+  display: flex;
+}
+
+.choixContact1 img,
+.choixContact2 img,
+.choixContact3 img {
+  height: 1rem;
+  width: 1rem;
+  color: var(--colorv1);
+  margin-right: 1rem;
+}
