@@ -38,6 +38,34 @@
   color: var(--text-color2);
 }
 
+.formulaire__champs h4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.formulaire__champs p {
+  margin-bottom: 1rem;
+}
+
+.formulaire__bouton {
+  border-radius: 10rem;
+  font-weight: bold;
+  color: var(--text-color2);
+  background-color: var(--colorv3);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out, transform 0.3s ease-in-out;
+  font-size: 1rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  padding: 0.6rem;
+}
+
+.formulaire__bouton:hover {
+  transform: scale(1.2);
+  background-color: var(--colorv1);
+}
+
 .champs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -45,17 +73,19 @@
   width: 80%;
   margin: auto;
   background-color: var(--colorv11);
-  padding: 1.5rem;
-  border-radius: 1rem;
+  padding: 0.8rem;
+  border-radius: 0.3rem;
   color: var(--text-color2);
 }
 
 .champs input,
 .champs button {
+  height: 2rem;
   padding: 0.5rem;
-  border-radius: 4px;
+  border-radius: 0.5rem;
   background-color: var(--colorv1);
   color: var(--text-color2);
+  border: none;
 }
 
 button {
@@ -88,9 +118,9 @@ button {
   grid-column: span 2;
   width: 100%;
   padding: 0.5rem;
-  border-radius: 4px;
-  height: 4rem;
+  height: 3.5rem;
   background-color: var(--colorv1);
+  border-radius: 0.5rem;
 }
 
 .contact {
@@ -123,3 +153,11 @@ button {
   color: var(--colorv1);
   margin-right: 1rem;
 }
+
+/* Navigateurs modernes */
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-color2);
+}
+
+/*CONTACT*/
