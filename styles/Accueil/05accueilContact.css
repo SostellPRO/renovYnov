@@ -161,3 +161,45 @@ textarea::placeholder {
 }
 
 /*CONTACT*/
+.contact {
+  display: flex;
+}
+
+.contact__logo {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.contact__logo img {
+  margin-bottom: 1.5rem;
+}
+
+.contact__info {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__info1,
+.contact__info2,
+.contact__info3 {
+  width: 27.5%;
+}
+
+.contact__info1 h4,
+.contact__info2 h4,
+.contact__info3 h4 {
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.contact__info-li {
+  font-weight: light;
+  font-style: light;
+  font-size: 0.8rem;
+  color: gray;
+}
