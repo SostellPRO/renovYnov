@@ -202,4 +202,5 @@ textarea::placeholder {
   font-style: light;
   font-size: 0.8rem;
   color: gray;
+  margin-bottom: 0.45rem;
 }
