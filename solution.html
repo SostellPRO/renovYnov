@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YNOV</title>
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/Accueil/01accueilHeader.css" />
-    <link rel="stylesheet" href="./styles/Accueil/02accueilSolution.css" />
-    <link rel="stylesheet" href="./styles/Accueil/03accueilPrestation.css" />
-    <link rel="stylesheet" href="./styles/Accueil/04accueilSécurité.css" />
-    <link rel="stylesheet" href="./styles/Accueil/05accueilContact.css" />
+    <link rel="stylesheet" href="./styles/Solution/01solutionHeader.css" />
+    <link rel="stylesheet" href="./styles/Solution/02solutionSolution.css" />
   </head>
   <body>
     <section class="presentation">
@@ -59,40 +56,45 @@
           <h2>Services</h2>
           <h3>Des solutions adaptées à chaque besoin</h3>
         </div>
-        <div class="solutions__partie-basse">
+        <div class="carousel">
+          <!-- Ces spans servent de cibles pour le pseudo‑sélecteur :target -->
+          <span id="card1"></span>
+          <span id="card2"></span>
+          <span id="card3"></span>
+        
           <div class="card_container">
-            <div class="solutions__card" id="card1">
+            <div class="solutions__card card1">
               <img src="./Images/Icones/Icone_file-cb.png" alt="" />
               <h4>Recouvrement Amiable</h4>
               <p>
                 Récupérez vos impayés tout en préservant vos relations clients.
               </p>
+              <a href="#card3" class="flèche précédent"></a>
+              <a href="#card2" class="flèche suivant"></a>
             </div>
-            <div class="solutions__card" id="card2">
+            <div class="solutions__card card2">
               <img src="./Images/Icones/Icone_file.png" alt="" />
               <h4>Recouvrement Judiciaire</h4>
-              <p>Quand l'amiable ne suffit plus, nous sécurisons vos droits.</p>
+              <p>
+                Quand l'amiable ne suffit plus, nous sécurisons vos droits.
+              </p>
+              <a href="#card1" class="flèche précédent"></a>
+              <a href="#card3" class="flèche suivant"></a>
             </div>
-            <div class="solutions__card" id="card3">
+            <div class="solutions__card card3">
               <img src="./Images/Icones/Icone_portefeuille.png" alt="" />
               <h4>Médiation</h4>
               <p>
-                Un dialogue pour trouver des solutions gagnant-gagnant et éviter
-                les conflits.
+                Un dialogue pour trouver des solutions gagnant-gagnant et éviter les conflits.
               </p>
-            </div>
-            <div class="solutions__card" id="card4">
-              <img src="./Images/Icones/Icone_CB-checked.png" alt="" />
-              <h4>Créances à l'International</h4>
-              <p>
-                Recouvrez vos créances au-delà ds frontières, avec des solutions
-                adaptées localement.
-              </p>
+              <a href="#card2" class="flèche précédent"></a>
+              <a href="#card1" class="flèche suivant"></a>
             </div>
           </div>
         </div>
-        <button>En savoir plus</button>
-      </div>
+        
+        
+        
     </section>
 
     <section class="prestations">
