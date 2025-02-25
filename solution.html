@@ -57,41 +57,46 @@
           <h3>Des solutions adaptées à chaque besoin</h3>
         </div>
         <div class="carousel">
-          <!-- Ces spans servent de cibles pour le pseudo‑sélecteur :target -->
-          <span id="card1"></span>
-          <span id="card2"></span>
-          <span id="card3"></span>
+          <!-- Inputs radio cachés pour gérer l'état -->
+          <input type="radio" name="carousel" id="slide1" checked>
+          <input type="radio" name="carousel" id="slide2">
+          <input type="radio" name="carousel" id="slide3">
+          <input type="radio" name="carousel" id="slide4">
         
           <div class="card_container">
             <div class="solutions__card card1">
               <img src="./Images/Icones/Icone_file-cb.png" alt="" />
               <h4>Recouvrement Amiable</h4>
-              <p>
-                Récupérez vos impayés tout en préservant vos relations clients.
-              </p>
-              <a href="#card3" class="flèche précédent"></a>
-              <a href="#card2" class="flèche suivant"></a>
+              <p>Nous privilégions toujours la voie amiable en première intention. Notre équipre prend contact avec vos débiteurs par téléphone, email et courrier recommandé pour trouver des solutions de paiement adaptées. Cette méthode rapide et non conflictuelle permet souvent de résoudre les impayés sans passer par des procédures judiciaires, tout en préservant vos relations commerciales. </p>
+              <!-- Les labels agissent comme boutons et ciblent l'input radio correspondant -->
+              <label for="slide4" class="flèche précédent"></label>
+              <label for="slide2" class="flèche suivant"></label>
             </div>
             <div class="solutions__card card2">
               <img src="./Images/Icones/Icone_file.png" alt="" />
               <h4>Recouvrement Judiciaire</h4>
-              <p>
-                Quand l'amiable ne suffit plus, nous sécurisons vos droits.
-              </p>
-              <a href="#card1" class="flèche précédent"></a>
-              <a href="#card3" class="flèche suivant"></a>
+              <p>Si les recouvrement amiable n'aboutit pas, nous engageons des procédures légales adaptées à la situation. De l'injonction de payer aux saisies judiciaires, nous vous accompagnons à chaque étape, en collaboration avec des huissiers et avocats partenaires. Notre objectif ; récupérer vos créances rapidement tout en minimisant les coûts.</p>
+              <label for="slide1" class="flèche précédent"></label>
+              <label for="slide3" class="flèche suivant"></label>
             </div>
             <div class="solutions__card card3">
               <img src="./Images/Icones/Icone_portefeuille.png" alt="" />
               <h4>Médiation</h4>
-              <p>
-                Un dialogue pour trouver des solutions gagnant-gagnant et éviter les conflits.
-              </p>
-              <a href="#card2" class="flèche précédent"></a>
-              <a href="#card1" class="flèche suivant"></a>
+              <p>Lorsque le dialogue direct est compliqué, nous proposons des services de médiation pour faciliter la résolution des conflits. En tant que tiers neutre, nous aidons les parties à trouver un terrain d'entente, évitant des procédures longues et coûteuses. La médiation est particulièrement efficace pour les les litiges complexes ou les créances sensibles.</p>
+              <label for="slide2" class="flèche précédent"></label>
+              <label for="slide4" class="flèche suivant"></label>
+            </div>
+            <div class="solutions__card card4">
+              <img src="./Images/Icones/Icone_CB-checked.png" alt="" />
+              <h4>Gestion de créances à l'internationale</h4>
+              <p>Nos services s'étendent au-delà des frontières françaises. Grâce à un réseau de partenaires internationaux fiables, nous prenons en charge le recouvrement de vos créances à l'étranger. Nous nous adaptons aux spécificités légales et culturelles de chaque pays pour optimiser les chances de récupération, tout en assurant un suivi constant grâce à notre plateforme en ligne.</p>
+              <label for="slide3" class="flèche précédent"></label>
+              <label for="slide1" class="flèche suivant"></label>
             </div>
           </div>
         </div>
+        
+        
         
         
         

@@ -15,7 +15,6 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: rem;
   width: 100%;
   height: 100%;
 }
@@ -29,30 +28,37 @@
 
 .solutions__partie-haute h2 {
   color: var(--colorv3);
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .solutions__partie-haute h3 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .card_container {
   display: flex;
-  width: 80%;
+  width: 90%;
   justify-content: center;
   padding-bottom: 1rem;
 }
 
 .solutions__card {
-  width: 20%;
   margin: 2.5%;
   justify-content: center;
   align-items: center;
   text-align: center;
   border-radius: 1rem;
   padding: 1.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease-in-out;
+  z-index: 1;
 }
 
 .solutions__card img {
@@ -73,19 +79,28 @@
   cursor: pointer;
 }
 
-#card1 {
+.solutions__card p {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card1 {
   background-color: var(--colorv4);
 }
 
-#card2 {
+.card2 {
   background-color: var(--colorv5);
 }
 
-#card3 {
+.card3 {
   background-color: var(--colorv7);
 }
 
-#card4 {
+.card4 {
   background-color: var(--colorv8);
 }
 
@@ -102,15 +117,15 @@
   position: relative;
   width: 80%;
   margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
-.carousel span {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
+/* On cache les inputs radio */
+.carousel input {
+  display: none;
 }
 
 .card_container {
@@ -118,58 +133,28 @@
   height: 400px; /* Ajustez selon vos besoins */
 }
 
-/* Toutes les cartes sont cachées par défaut */
-.solutions__card {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s ease-in-out;
-  z-index: 1;
-}
+/* Toutes les cartes sont positionnées de manière absolue et cachées par défaut */
 
-/* Par défaut, on affiche la carte 1 */
-.card1 {
+/* Affichage de la carte correspondante à l'input radio coché */
+#slide1:checked ~ .card_container .card1,
+#slide2:checked ~ .card_container .card2,
+#slide3:checked ~ .card_container .card3,
+#slide4:checked ~ .card_container .card4 {
   opacity: 1;
   pointer-events: auto;
   z-index: 2;
-}
-
-/* Afficher la carte ciblée */
-#card1:target ~ .card_container .card1 {
-  opacity: 1;
-  pointer-events: auto;
-  z-index: 2;
-}
-#card2:target ~ .card_container .card2 {
-  opacity: 1;
-  pointer-events: auto;
-  z-index: 2;
-}
-#card3:target ~ .card_container .card3 {
-  opacity: 1;
-  pointer-events: auto;
-  z-index: 2;
-}
-
-/* Masquer la carte par défaut (card1) quand card2 ou card3 est ciblée */
-#card2:target ~ .card_container .card1,
-#card3:target ~ .card_container .card1 {
-  opacity: 0;
-  pointer-events: none;
 }
 
 /* Styles pour les flèches de navigation */
 .flèche {
-  border: solid green;
+  border: solid var(--text-colorv1);
   padding: 12px;
   border-width: 0 5px 5px 0;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  text-decoration: none;
+  cursor: pointer;
+  /* Vous pouvez ajouter d'autres styles (taille, couleur, etc.) selon vos besoins */
 }
 
 .précédent {
