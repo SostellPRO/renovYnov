@@ -65,7 +65,10 @@
 .header__nav-ul:hover .header__nav-li:first-child::after {
   width: 0;
 }
-
+.header__nav-li {
+  position: relative;
+  z-index: 1;
+}
 .header__nav-li:first-child:hover::after {
   width: 100% !important;
 }
@@ -75,14 +78,19 @@
   position: absolute;
   left: 50%;
   bottom: 0;
-  width: 0;
+  width: 0; /* Empêche l'affichage immédiat */
   height: 3px;
   background-color: black;
-  transition: all 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
   transform: translateX(-50%);
 }
 
 .header__nav-li:hover::after {
+  width: 100%;
+}
+
+.header__nav-li:nth-child(4):hover::after,
+.header__nav-li:nth-child(5):hover::after {
   width: 100%;
 }
 
@@ -91,6 +99,8 @@
   padding-right: 1rem;
   height: 2.5rem;
   word-spacing: 0.1rem;
+  position: relative;
+  z-index: 10;
 }
 
 .header__partie-basse {
@@ -120,7 +130,7 @@
 
 .h1-underline {
   position: relative; /* Permet de placer l'image en absolu */
-  display: inline-block; /* Pour éviter un retour à la ligne */
+  display: inline-block;
 }
 
 .h1-underline::after {

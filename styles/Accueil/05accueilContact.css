@@ -79,7 +79,7 @@
 }
 
 .champs input,
-.champs button {
+.formulaire__bouton {
   height: 2rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
@@ -88,7 +88,7 @@
   border: none;
 }
 
-button {
+.formulaire__bouton {
   grid-column: span 2;
 }
 
@@ -121,6 +121,7 @@ button {
   height: 3.5rem;
   background-color: var(--colorv1);
   border-radius: 0.5rem;
+  border: none;
 }
 
 .contact {

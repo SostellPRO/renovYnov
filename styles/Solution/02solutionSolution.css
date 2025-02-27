@@ -28,13 +28,12 @@
 
 .solutions__partie-haute h2 {
   color: var(--colorv3);
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .solutions__partie-haute h3 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .card_container {
@@ -45,7 +44,6 @@
 }
 
 .solutions__card {
-  margin: 2.5%;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -144,7 +142,30 @@
   pointer-events: auto;
   z-index: 2;
 }
+.solution__card_detail {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
 
+p.solution__card_detail-p {
+  margin: 0;
+}
+
+.imageViolet1,
+.imageViolet2,
+.imageViolet3,
+.imageViolet4 {
+  width: 7rem;
+  height: 7rem;
+}
+
+.solution__card_detail-p {
+  margin: 0;
+}
 /* Styles pour les flèches de navigation */
 .flèche {
   border: solid var(--text-colorv1);
