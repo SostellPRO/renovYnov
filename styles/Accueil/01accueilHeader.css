@@ -28,6 +28,7 @@
   margin-left: 4rem;
   margin-right: 4rem;
   margin-top: 1.5rem;
+  height: 25%;
 }
 
 .header__nav-ul {
@@ -109,6 +110,7 @@
   align-items: flex-end;
   justify-content: space-between;
   width: 100%;
+  height: 75%;
 }
 
 .header__partie-basse-gauche {
