@@ -136,3 +136,9 @@ h4 {
   font-family: "urbanist", sans-serif;
   font-weight: bold;
 }
+
+/* LIENS */
+
+a {
+  text-decoration: none;
+}

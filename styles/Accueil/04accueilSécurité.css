@@ -61,6 +61,11 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.tuto__card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
 .tuto__card img {
   position: absolute;
   top: 10px;

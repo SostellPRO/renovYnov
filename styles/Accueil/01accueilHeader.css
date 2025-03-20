@@ -116,7 +116,7 @@
 .header__partie-basse-gauche {
   margin-top: 2.5rem;
   margin-left: 4rem;
-  margin-bottom: 12rem;
+  margin-bottom: 8rem;
   display: flex;
   flex-direction: column;
 }
@@ -179,14 +179,11 @@
   justify-content: flex-end;
   width: 50%; /* Ajustez selon vos besoins */
   height: auto;
-  overflow: hidden; /* Évite que l'image dépasse */
+  height: 95%;
 }
 
 .header__partie-basse-droite img {
   position: relative;
   bottom: 0; /* Assure que l’image est bien collée en bas */
-  right: 3rem; /* Décale un peu vers la gauche pour éviter le bord droit */
-  width: 70%; /* Empêche l’image de dépasser en largeur */
-  height: 70%; /* Empêche qu'elle ne dépasse la hauteur du container */
-  object-fit: contain; /* Garde le bon ratio */
+  right: 10rem; /* Décale un peu vers la gauche pour éviter le bord droit */
 }

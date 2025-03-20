@@ -1,0 +1,111 @@
+.reporting {
+  height: 100vh;
+  width: 100vw;
+}
+
+.reporting_container {
+  height: 90%;
+  width: 95%;
+  margin: auto;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    45deg,
+    var(--colorv4) 0%,
+    var(--colorv4) 20%,
+    var(--colorv5) 60%,
+    var(--colorv6) 100%
+  );
+}
+
+.reporting__partie-haute {
+  height: 20%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 3rem;
+  margin-left: 4rem;
+}
+
+.header__partie-basse-gauche h3 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--colorv1);
+}
+
+.header__partie-basse-gauche h2 {
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+  color: black;
+}
+
+.header__partie-basse-gauche p {
+  font-size: 1.25rem;
+}
+
+.reporting__partie-basse {
+  height: 80%;
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 4.5rem;
+}
+
+.reporting__partie-basse__gauche {
+  width: 30%;
+}
+
+.reporting__partie-basse__gauche img {
+  width: 80%; /* Empêcher l'image d'être trop large */
+  height: auto;
+  margin: auto;
+}
+
+.reporting__partie-basse__droite {
+  width: 45%;
+}
+
+.reporting__partie-basse__droite-p1 h3 {
+  margin-bottom: 1rem;
+}
+
+.parap1 {
+  margin-bottom: 1rem;
+}
+.parap2 {
+  margin-bottom: 2rem;
+}
+
+.reporting__partie-basse__droite-p2 h4 {
+  margin-bottom: 1rem;
+  color: var(--colorv1);
+}
+
+.reporting__partie-basse__droite-p2 ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Deux colonnes pour aligner 2x2 */
+  gap: 15px; /* Espacement entre les éléments */
+  max-width: 600px; /* Ajuste la largeur si nécessaire */
+}
+
+.reporting__partie-basse__droite-p2 ul li {
+  position: relative;
+  padding-left: 40px;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.reporting__partie-basse__droite-p2 ul li::before {
+  content: "•";
+  font-size: 4rem; /* Agrandir la puce */
+  color: var(--colorv1);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%); /* Centre verticalement la puce */
+}
